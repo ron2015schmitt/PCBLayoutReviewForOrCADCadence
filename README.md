@@ -1,5 +1,6 @@
-# CadencePCBLayoutReview
-GUI that provides functionality making [Cadence PCB Layout](https://www.orcad.com/) much easier to read and review.  
+# Cadence PCB Layout Review Beautifier 
+
+Script and GUI that provides functionality making a [Cadence PCB Layout](https://www.orcad.com/) much easier to read and review.  
 
 * *It has NO effect on the fabrication and manufacturing layers (eg ASSEMBLY, SILKSCREEN)*
 * orients, centers, and automatically sizes the REFDES's and pin designations on the TOP DISPLAY layer
