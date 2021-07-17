@@ -11,10 +11,15 @@ The script is written in [Cadence SKILL](https://en.wikipedia.org/wiki/Cadence_S
 ## INSTALLTION
 
 1. copy `PCBReview.il` to the `C:\Cadence\setup\skill` folder. This is the Skill script.
-2. merge `allegro.ilinit` with the file of the same name in `is C:\Cadence\VERSION\pcbenv` folder, or copy if none exists.  This file loads all the scripts in the `C:\Cadence\setup\skill` folder initialization of OrCAD Layout.  (`allegro.ilinit` is the initialization fiel for OrCAD Layout.)
+2. merge `allegro.ilinit` with the file of the same name in `is C:\Cadence\VERSION\pcbenv` folder, or copy if none exists.  This file loads all the scripts in the `C:\Cadence\setup\skill` folder during initialization of the OrCAD Layout application.  (`allegro.ilinit` is the initialization fiel for OrCAD Layout.)
 
 
-## POPUP WINDOW
+## USAGE 
+
+1. Type `PCBReview` at the command prompt.
+2. The modifications to the DISPLAY layers describe above will take place.
+3. Afterward completion, the following popup window will appear which allows control of the colors and other display features.
+
 ![Screen shot of popup window](screenshot.png)
 
 ## EXAMPLE RESULT
