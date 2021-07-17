@@ -1,6 +1,6 @@
 # Cadence PCB Layout Review Beautifier 
 
-Script and GUI that provides functionality making a [Cadence PCB Layout](https://www.orcad.com/) much easier to read and review.  
+Script and GUI that provides functionality that makes a [Cadence PCB Layout](https://www.orcad.com/) much easier to read and review.  
 
 * *It has NO effect on the fabrication and manufacturing layers (eg ASSEMBLY, SILKSCREEN)*
 * orients, centers, and automatically sizes the REFDES's and pin designations on the TOP DISPLAY layer
@@ -11,15 +11,16 @@ The script is written in [Cadence SKILL](https://en.wikipedia.org/wiki/Cadence_S
 
 ## INSTALLTION
 
-1. copy `PCBReview.il` to the `C:\Cadence\setup\skill` folder. This is the Skill script.
-2. merge `allegro.ilinit` with the file of the same name in `is C:\Cadence\VERSION\pcbenv` folder, or copy if none exists.  This file loads all the scripts in the `C:\Cadence\setup\skill` folder during initialization of the OrCAD Layout application.  (`allegro.ilinit` is the initialization fiel for OrCAD Layout.)
+1. Copy `PCBReview.il` to your `C:\Cadence\setup\skill` folder. This is the Skill script.
+2. Merge `allegro.ilinit` with the file of the same name in your `C:\Cadence\VERSION\pcbenv` folder, or copy if none exists.  This file loads all the scripts in the `C:\Cadence\setup\skill` folder during initialization of the OrCAD Layout application.  (`allegro.ilinit` is the initialization file for OrCAD Layout.)
 
 
 ## USAGE 
 
-1. Type `PCBReview` at the command prompt.
-2. The modifications to the DISPLAY layers describe above will take place.
-3. Afterward completion, the following popup window will appear which allows control of the colors and other display features.
+1. Open the OrCAD layout tool.
+2. Type `PCBReview` at the OrCAD layout command prompt.
+3. The modifications to the DISPLAY layers described above will take place.
+4. Afterward completion, the following popup window will appear which allows control of the colors and other display features.
 
 ![Screen shot of popup window](screenshot.png)
 
