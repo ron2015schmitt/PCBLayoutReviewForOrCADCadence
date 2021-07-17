@@ -1,6 +1,6 @@
-# Cadence PCB Layout Review Beautifier 
+# OrCAD  / Allegro PCB Layout Review Beautifier 
 
-Script and GUI that provides functionality that makes a [Cadence PCB Layout](https://www.orcad.com/) much easier to read and review.  
+The project provides a script and GUI that makes a PCB layout, created in either [OrCAD](https://www.orcad.com/) or [Allgero](https://www.cadence.com/en_US/home/tools/pcb-design-and-analysis/pcb-layout/allegro-pcb-designer.html) much easier to read and review. It is also great for hardware debugging.  Note that the OrCAD and Allegro PCB layout tools are [both owned by Cadence and use interchangeable file formats](https://community.cadence.com/cadence_technology_forums/f/pcb-design/22857/orcad-vs-allegro).
 
 * *It has NO effect on the fabrication and manufacturing layers (eg ASSEMBLY, SILKSCREEN)*
 * orients, centers, and automatically sizes the REFDES's and pin designations on the TOP DISPLAY layer
@@ -9,7 +9,14 @@ Script and GUI that provides functionality that makes a [Cadence PCB Layout](htt
 
 The script is written in [Cadence SKILL](https://en.wikipedia.org/wiki/Cadence_SKILL), which is a variant of [Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)).
 
-## INSTALLTION
+## INSTALATION 
+
+### OrCAD
+
+1. Copy `PCBReview.il` to your `C:\Cadence\setup\skill` folder. This is the Skill script.
+2. Merge `allegro.ilinit` with the file of the same name in your `C:\Cadence\VERSION\pcbenv` folder, or copy if none exists.  This file loads all the scripts in the `C:\Cadence\setup\skill` folder during initialization of the OrCAD Layout application.  (`allegro.ilinit` is the initialization file for OrCAD Layout.)
+
+### Allegro
 
 1. Copy `PCBReview.il` to your `C:\Cadence\setup\skill` folder. This is the Skill script.
 2. Merge `allegro.ilinit` with the file of the same name in your `C:\Cadence\VERSION\pcbenv` folder, or copy if none exists.  This file loads all the scripts in the `C:\Cadence\setup\skill` folder during initialization of the OrCAD Layout application.  (`allegro.ilinit` is the initialization file for OrCAD Layout.)
