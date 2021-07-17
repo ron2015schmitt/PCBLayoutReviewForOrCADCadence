@@ -1,0 +1,16 @@
+setSkillPath(buildString(append1(getSkillPath() "c:/Cadence/setup/skill" )))
+
+;load all files in the Skill path
+  foreach(dir getSkillPath()
+    ;make sure the directory exists
+    when(isDir(dir)
+      ;load only skill files
+      foreach(file rexMatchList("\\.il$" getDirFiles(dir))
+        when(
+           printf("Loading Skill file: %s\n" file)
+           load(file)
+      )
+    )
+  )
+)
+
