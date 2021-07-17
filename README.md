@@ -9,9 +9,9 @@ The project provides a script and GUI that makes a PCB layout, created in either
 
 The script is written in [Cadence SKILL](https://en.wikipedia.org/wiki/Cadence_SKILL), which is a variant of [Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)).
 
-## INSTALATION 
+## INSTALLATION 
 
-### OrCAD
+### OrCAD [TODO]
 
 1. Copy `PCBReview.il` to your `C:\Cadence\setup\skill` folder. This is the Skill script.
 2. Merge `allegro.ilinit` with the file of the same name in your `C:\Cadence\VERSION\pcbenv` folder, or copy if none exists.  This file loads all the scripts in the `C:\Cadence\setup\skill` folder during initialization of the OrCAD Layout application.  (`allegro.ilinit` is the initialization file for OrCAD Layout.)
