@@ -1,3 +1,5 @@
+; set this path to your skill script directory
+; or create a directory if you do not have one
 setSkillPath(buildString(append1(getSkillPath() "c:/Cadence/setup/skill" )))
 
 ;load all files in the Skill path
