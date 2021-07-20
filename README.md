@@ -13,8 +13,8 @@ The script is written in [Cadence SKILL](https://en.wikipedia.org/wiki/Cadence_S
 
 ### OrCAD [TODO]
 
-1. Copy `PCBReview.il` to your `C:\Cadence\setup\skill` folder. This is the Skill script.
-2. Merge `allegro.ilinit` with the file of the same name in your `C:\Cadence\VERSION\pcbenv` folder, or copy if none exists.  This file loads all the scripts in the `C:\Cadence\setup\skill` folder during initialization of the OrCAD Layout application.  (`allegro.ilinit` is the initialization file for OrCAD Layout.)
+1. Copy `PCBReview.il` to your `path\OrCAD\PCBENV\` folder. This is the Skill script.
+2. Merge `allegro.ilinit` with the file of the same name in your `path\OrCAD\PCBENV\` folder, or copy if none exists.  This file loads all the scripts in the `C:\Cadence\setup\skill` folder during initialization of the OrCAD Layout application.  (`allegro.ilinit` is the initialization file for OrCAD Layout.)
 
 ### Allegro
 
