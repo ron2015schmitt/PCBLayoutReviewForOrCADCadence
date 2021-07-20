@@ -25,7 +25,7 @@ skill
 load "[path]/PCBReview.il" 
 pcbreview
 ```
-where `[path]` is the full path to the folder that you saved the `PCBReview.il` file to.  Note that in your path you MUST use forward slashes ('/') and NOT backslahses ('\\').
+where `[path]` is the full path to the folder that you saved the `PCBReview.il` file to.  Note that in your path you MUST use forward slashes ('/') and NOT backslahses ('\\').  The use of double quotes surrounding the `"[path]/filename"` is also required.
 
 3. The modifications to the DISPLAY layers described above will take place.
 4. Afterward completion, the following popup window will appear which allows control of the colors and other display features.
