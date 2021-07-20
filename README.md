@@ -11,25 +11,27 @@ The script is written in [Cadence SKILL](https://en.wikipedia.org/wiki/Cadence_S
 
 ## INSTALLATION 
 
-### OrCAD [TODO]
 
-1. Copy `PCBReview.il` to your `path\OrCAD\PCBENV\` folder. This is the Skill script.
-2. Merge `allegro.ilinit` with the file of the same name in your `path\OrCAD\PCBENV\` folder, or copy if none exists.  This file loads all the scripts in the `C:\Cadence\setup\skill` folder during initialization of the OrCAD Layout application.  (`allegro.ilinit` is the initialization file for OrCAD Layout.)
+1. Download `PCBReview.il`. This is the Skill script.
 
-### Allegro
-
-1. Copy `PCBReview.il` to your `C:\Cadence\setup\skill` folder. This is the Skill script.
-2. Merge `allegro.ilinit` with the file of the same name in your `C:\Cadence\VERSION\pcbenv` folder, or copy if none exists.  This file loads all the scripts in the `C:\Cadence\setup\skill` folder during initialization of the OrCAD Layout application.  (`allegro.ilinit` is the initialization file for OrCAD Layout.)
-
+If your installation has a skill folder, e.g `C:\Cadence\[VERSION]\setup\skill`, place the file there.
 
 ## USAGE 
 
-1. Open the OrCAD layout tool.
-2. Type `PCBReview` at the OrCAD layout command prompt.
-3. The modifications to the DISPLAY layers described above will take place.
-4. Afterward completion, the following popup window will appear which allows control of the colors and other display features.
+1. Open the OrCAD (or allegro) layout tool.
+2. At OrCAD (or allegro) layout command prompt, type `load("[path]/PCBReview.il")`, where `[path]` is the full path to the folder that you saved the file in.
+3. Type `PCBReview` at the OrCAD layout command prompt.
+4. The modifications to the DISPLAY layers described above will take place.
+5. Afterward completion, the following popup window will appear which allows control of the colors and other display features.
 
 ![Screen shot of popup window](screenshot.png)
+
+
+### allegro.ilinit [optional]
+
+1. Place the load command above in your `allegro.ilinit` in your `PCBENV\` folder (it may be named `pcbenv\` instead).  Perform a file search if you're not sure where it resides.
+or
+2. Dowload and merge the contents of  `allegro.ilinit` with the file of the same name in your `PCBENV\` folder (it may be named `pcbenv\` instead).  This file loads all the scripts in the `C:\Cadence\setup\skill` folder during initialization of the OrCAD Layout application.  (`allegro.ilinit` is the initialization file for OrCAD Layout.)  Be sure to change  `C:\Cadence\setup\skill` to the path where your skill scripts reside.
 
 ## EXAMPLE RESULT
 
